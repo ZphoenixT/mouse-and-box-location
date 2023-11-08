@@ -4,6 +4,21 @@
 The Mouse and Box Location Page is a simple, interactive web page designed to display and track the position of the user's mouse cursor as well as the location of a designated box within the page.
 It's like a fun tool to see how your mouse moves and how you can move an object around. It helps to learn about positions and how things move on a webpage.
 
+## Mouse location
+In order to find the location of the mouse cursor I used the `clientX` and `clientY` events to tract the X-axis and Y-axis of the mouse.
+```javascript
+const X = document.getElementById("x");
+const Y = document.getElementById("y");
+
+
+document.addEventListener('mousemove', function(event) {
+    const mouseX = event.clientX;
+    X.innerText = `X: ${mouseX}`;
+    const mouseY = event.clientY;
+    Y.innerText = `Y: ${mouseY}`;
+});
+```
+
 ## getBoundingClientReact()
 The `getBoundingClientReact()` method returns information about the objects position relative the the size of the screen/webpage. It returns different values such as: `left`, `right`, `top`, `bottom`, `x`, `y`, `width`, and `height`. In this project in order to the get center for the X-axis I use this line of code: 
 ```javascript 
