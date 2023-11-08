@@ -72,4 +72,4 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 ```
 ## Demo
-Click <a href="file:///C:/Users/ztoew/Documents/School%20Work%20MITT%20SD/MouseLocation/index.html">here</a> to test it.
+Click [here](file:///C:/Users/ztoew/OneDrive/Desktop/SCHOO-VS-CODE/MosueBoxLocation/index.html)
